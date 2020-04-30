@@ -1,0 +1,28 @@
+{
+  "name": "laravel-electron",
+  "version": "1.0.0",
+  "description": "Making laravel desktop application using electron js",
+  "main": "main.js",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "laravel",
+    "electron",
+    "desktop",
+    "application"
+  ],
+  "author": "laravelarticle",
+  "license": "cc-by-4.0",
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-packager": "^11.0.1"
+  },
+  "dependencies": {
+    "node-php-server": "^0.1.2"
+  }
+}
