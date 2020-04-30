@@ -6,4 +6,7 @@ Making Laravel desktop application using Electron Js.
     <a href="https://facebook.com/laravelarticle"><img src="https://badgen.net/badge/facebook/laravelarticle/3b5998"/></a>
 </p>
 
+### Included
+- php 7.2
+- Laravel 6
 ### Check the complete tutorial and usage on [laravelarticle.com](https://laravelarticle.com/laravel-desktop-application-using-electron-js)
