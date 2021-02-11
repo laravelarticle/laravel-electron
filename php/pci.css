@@ -1,0 +1,64 @@
+/**
+ * Default stylesheet used by the HTML renderer of PHP_CompatInfo
+ *
+ * @category  PHP
+ * @package   PHP_CompatInfo
+ * @author    Laurent Laville <pear@laurent-laville.org>
+ * @copyright 2008 Laurent Laville
+ * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version   CVS: $Id: pci.css,v 1.2 2008/06/16 21:24:22 farell Exp $
+ * @since     File available since Release 1.8.0b4
+ * @link      http://www.cssplay.co.uk/menu/tablescroll.html
+ */
+
+.outer {
+  position:relative;
+  padding:4em 0 7em 0;
+  width:750px;
+  background:#eee;
+  margin:0 auto 3em auto;
+  border: 1px solid #666;
+}
+.inner {
+  overflow:auto;
+  width:750px;
+  height:20em;
+  background:#eee;
+}
+.outer thead td {
+  background:#666;
+  color: #fff;
+}
+.outer thead tr {
+  position:absolute;
+  left:0;
+  top:1.5em;
+  height:1.5em;
+}
+.outer thead td {
+  text-align:center;
+  font-weight:bold;
+}
+.outer tfoot tr {
+  position:absolute;
+  width:730px;
+  border:0;
+  bottom:0;
+  left:0;
+}
+.outer tfoot td {
+  text-align:left;
+  background:#666;
+  color:#fff;
+}
+.outer td {
+  text-align:left;
+  font-family:Arial,Verdana;
+}
+.outer .even {
+  background-color:#fff;
+}
+.outer td.dirname {
+  width: 44em;
+  color:#666;
+}

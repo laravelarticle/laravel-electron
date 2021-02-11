@@ -1,6 +1,6 @@
 <div class="centered">
     <h1>Laravel Electron</h1>
-    <p>PHP: {{ phpversion() }} <br>Laravel 6</p>
+    <p>PHP: {{ phpversion() }} <br>Laravel 8.27.0</p>
     <p><a href="https://laravelarticle.com/laravel-desktop-application-using-electron-js">Laravel Article</a></p>
 </div>
 
