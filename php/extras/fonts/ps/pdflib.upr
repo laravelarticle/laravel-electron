@@ -1,0 +1,139 @@
+PS-Resources-1.0
+
+% This is a sample UPR file for use with PDFlib.
+% It describes the 14 PDF core fonts (only AFM metrics, no font outline files),
+% and some additional sample fonts (with metrics and font outline file) as
+% well as encodings.
+% This file is not required if you intend to work only with Acrobat's
+% core fonts in the native encoding of your platform.
+%
+% The complete description of the UPR file format can be found in the PDFlib
+% manual.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The first section declares the resources described in this file.
+% It will have to be changed only rarely.
+% The keywords given here start the later sections. A single '.' on
+% a line closes a section.
+% Note that PDFlib ignores this section -- it is simply for compatibility.
+
+FontAFM
+FontPFM
+FontOutline
+Encoding
+.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The path entry is a shortcut to the resource files. It will be
+% prepended to all resource file names. Adjust as necessary.
+% Note that the first slash is required by UPR syntax, the rest
+% of the line contains the path (relative to the respective program).
+% The line should _not_ end with a directory separator. On the Mac,
+% of course, you will have to put colons ':' as directory separators.
+%
+% There must be an additional slash in front of the actual path!
+%
+% Important: you will either have to adjust the font path (and remove the
+% percent character at the beginning) in this line, or add appropriate
+% path names to all file names in the rest of this file.
+%
+% Directory prefix example for Windows: /c:/psfonts
+% Important: this must _not_ be set for the PDFlib ActiveX edition!
+% The PDFlib ActiveX edition expects all font files in its fonts directory!
+
+%//home/tm/src/pdflib/fonts
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The AFM font metrics section, one line per font in the format
+% <fontname>=<filename>
+% Note that PostScript font name must not contain any blank character
+
+FontAFM
+Courier=Courier.afm
+Courier-Bold=Courier-Bold.afm
+Courier-BoldOblique=Courier-BoldOblique.afm
+Courier-Oblique=Courier-Oblique.afm
+Helvetica=Helvetica.afm
+Helvetica-Bold=Helvetica-Bold.afm
+Helvetica-BoldOblique=Helvetica-BoldOblique.afm
+Helvetica-Oblique=Helvetica-Oblique.afm
+Symbol=Symbol.afm
+Times-Bold=Times-Bold.afm
+Times-BoldItalic=Times-BoldItalic.afm
+Times-Italic=Times-Italic.afm
+Times-Roman=Times-Roman.afm
+ZapfDingbats=ZapfDingbats.afm
+LuciduxSans=lcdxsr.afm
+.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The PFM font metrics section, one line per font in the format
+% <fontname>=<filename>
+% Note that PostScript font name must not contain any blank character
+
+FontPFM
+Poetica-ChanceryI=Poetica-ChanceryI.pfm
+% Example for an absolute path name with the prefix not applied (double equal
+% sign):
+Mistral==c:/psfonts/pfm/mist____.pfm
+.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The PostScript and TrueType font outline section, one line per font in
+% the format
+% <fontname>=<filename>
+% Note that PostScript font names must not contain any blank character,
+% but TrueType font names may contain blank characters (and often do).
+
+FontOutline
+LuciduxSans=lcdxsr.pfa
+.
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The Encoding section, one line per encoding in the format
+% <encodingname>=<filename>
+% The following encodings are built into PDFlib and need not be
+% configured here: winansi (also good for cp1252 and iso8859-1),
+% macroman, and ebcdic.
+%
+% Unicode-based code pages and name-based encoding tables are equivalent,
+% and will be converted into each other on the fly.
+
+Encoding
+
+%cp1250=cp1250.enc
+cp1250=cp1250.cpg
+cp1251=cp1251.cpg
+cp1252=cp1252.cpg
+cp1253=cp1253.cpg
+cp1254=cp1254.cpg
+cp1255=cp1255.cpg
+cp1256=cp1256.cpg
+cp1257=cp1257.cpg
+cp1258=cp1258.cpg
+
+%iso8859-2=iso8859-2.enc
+iso8859-2=iso8859-2.cpg
+iso8859-3=iso8859-3.cpg
+iso8859-4=iso8859-4.cpg
+iso8859-5=iso8859-5.cpg
+iso8859-6=iso8859-6.cpg
+iso8859-7=iso8859-7.cpg
+iso8859-8=iso8859-8.cpg
+iso8859-9=iso8859-9.cpg
+%iso8859-9=iso8859-9.enc
+iso8859-10=iso8859-10.cpg
+iso8859-13=iso8859-13.cpg
+% ISO 8859-14 doesn't fully work since it uses characters outside AGL!
+iso8859-14=iso8859-14.cpg
+iso8859-15=iso8859-15.cpg
+iso8859-16=iso8859-16.cpg
+%iso8859-15=iso8859-15.enc
+.
