@@ -7,6 +7,6 @@ Making Laravel desktop application using Electron Js.
 </p>
 
 ### Included
-- php 8.0
-- Laravel 8.27.0
+- php 8.1
+- Laravel ^8.83.13
 ### Check the complete tutorial and usage on [laravelarticle.com](https://laravelarticle.com/laravel-desktop-application-using-electron-js)

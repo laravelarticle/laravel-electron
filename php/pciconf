@@ -1,4 +1,4 @@
-#!C:\xampp\php\.\php.exe
+#!\xampp\php\.\php.exe
 <?php
 /**
  * The Predefined Classes/Constants array script generator.
@@ -98,7 +98,7 @@ if ($args->isDefined('v')) {
 if ($args->isDefined('o')) {
     $o = $args->getValue('o');
     if (strpos($o, '@'.'php_dir@')) {
-        $o = str_replace('@'.'php_dir@', 'C:\xampp\php\pear', $o);
+        $o = str_replace('@'.'php_dir@', '\xampp\php\pear', $o);
     }
     if (is_dir($o) && (is_writable($o))) {
         /* Directory where to write
@@ -113,7 +113,7 @@ if ($args->isDefined('o')) {
         exit(1);
     }
 } else {
-    $target_directory = 'C:\xampp\php\pear' . $ds . 'PHP' .$ds . 'CompatInfo' . $ds;
+    $target_directory = '\xampp\php\pear' . $ds . 'PHP' .$ds . 'CompatInfo' . $ds;
 }
 
 // enable

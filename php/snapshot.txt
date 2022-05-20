@@ -1,9 +1,9 @@
 This snapshot was automatically generated on
-Tue, 24 Nov 2020 21:40:49 +0000
+Wed, 11 May 2022 09:29:17 +0000
 
-Version: 8.0.0
+Version: 8.1.6
 Branch: HEAD
-Build: C:\php-snap-build\php80\vs16\x64\obj\Release_TS
+Build: D:\a\php-ftw\php-ftw\php\vs16\x64\obj\Release_TS
 
 Built-in Extensions
 ===========================
@@ -78,25 +78,25 @@ Module: php_ftp.dll
 
 Module: php_intl.dll
 ===========================
-	icuuc68.dll
-	icuin68.dll
-	icuio68.dll
+	icuuc70.dll
+	icuin70.dll
+	icuio70.dll
 	vcruntime140_1.dll
 
-Module: icuuc68.dll
+Module: icuuc70.dll
 ===========================
-	icudt68.dll
+	icudt70.dll
 	vcruntime140_1.dll
 
-Module: icuin68.dll
+Module: icuin70.dll
 ===========================
-	icuuc68.dll
+	icuuc70.dll
 	vcruntime140_1.dll
 
-Module: icuio68.dll
+Module: icuio70.dll
 ===========================
-	icuuc68.dll
-	icuin68.dll
+	icuuc70.dll
+	icuin70.dll
 	vcruntime140_1.dll
 
 Module: php_ldap.dll
