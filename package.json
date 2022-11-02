@@ -20,7 +20,7 @@
   "license": "cc-by-4.0",
   "devDependencies": {
     "electron": "^8.2.3",
-    "electron-packager": "^11.0.1"
+    "electron-packager": "^17.1.1"
   },
   "dependencies": {
     "node-php-server": "^0.1.2"
